@@ -1,0 +1,335 @@
+<!--
+
+NOTES PROBLEMES :
+
+- les "<div class="hr-sect">" sont mis en dehors de leur section correspondante, sinon ya des problemes de container/etc.. sur telephone
+- la grille boostrap est pas centrée sur telephone
+- le menu ne remonte pas tout seul (sur tel)
+
+DANS L AVENIR :
+- mettre un carousel d'img derriere le siam box qd on arrive sur la page (idée ben)
+- mettre carousel pr la liste de recettes
+
+-->
+
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Siam Box</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>     
+    
+    
+</head>
+    
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <input type="checkbox" id="navbar-toggle-cbox">
+                <div class="navbar-header">
+                    <label for="navbar-toggle-cbox" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </label>
+                    <a class="navbar-brand" href="#">Siam Box</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#navetapes">Étapes</a></li>
+                        <li><a href="#navlisterecettes">Recettes</a></li>
+                        <li><a href="#navtarifs">Tarifs</a></li>
+                        <li><a href="#navcommander">Commander</a></li>
+                        <li><a href="#navfaq">FAQ</a></li>
+                        <li><a href="#navcontact">Nous contacter</a></li>
+                        <!--<li><a href="#navequipe">L'équipe</a></li>-->
+                        <li><a href="https://www.instagram.com/siam.box/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="intro"> 
+            <div class="intro-container">
+                    <h1>SIAM BOX</h1>
+            </div>
+        </section>
+        
+        
+        
+        <div id="navpresentation" class="container-fluid">
+            <div class="hr-sect">Présentation</div>
+        </div>
+        <section id="presentation">
+            <div class="container-fluid">
+                <p>Avez-vous déjà eu envie de préparer un repas asiatique alors que vous n’aviez pas tous les ingrédients dans votre cuisine ? <br><br><strong><span>Siam box</span></strong> est <strong><span>la solution</span></strong> qui résoudra ce problème et rendra la cuisine asiatique accessible à tous !<br><br>Vous avez sans doute des choses plus intéressantes à faire que vos courses ; voilà pourquoi, nous vous proposons de livrer chez vous une box contenant <strong>les ingrédients nécessaires à l'élaboration d'une savoureuse recette asiatique !<br><br>À vos agendas ! Une nouvelle recette sera disponible toutes les deux semaines !</strong></p>
+            </div>
+        </section>
+        
+        
+
+        <div class="container-fluid">
+            <div id="navetapes" class="hr-sect">Étapes</div>
+        </div>
+        <section id="etapes">
+                <div class="container-fluid">
+                    <ul>
+                        <section class="row">
+                            <div class="col-xm-0 col-sm-0 col-md-0 col-lg-1">
+                            </div>
+                            <div class="col-xm-12 col-sm-6 col-md-6 col-lg-2">
+                                <div id="choixduplat">
+                                    <li>
+                                        <h3>1. Choix de la recette</h3>
+                                        <p>Vous choisissez la ou les recette(s) de votre choix dans la section "Notre liste de recettes".</p>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-xm-12 col-sm-6 col-md-6 col-lg-2">
+                                <div id="commande">
+                                    <li>
+                                        <h3>2. Commande</h3>
+                                        <p>Vous pouvez passer commande <strong><u>entre dimanche 8h et mardi 21h</u></strong> en remplissant notre formulaire ci-dessous.</p>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-xm-12 col-sm-6 col-md-6 col-lg-2">
+                                <div id="paiement">
+                                    <li>
+                                        <h3>3. Paiement</h3>
+                                        <p>Après avoir complété le formulaire, nous vous enverrons un mail contenant les informations pour payer.</p>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-xm-12 col-sm-6 col-md-6 col-lg-2">
+                                <div id="preparation">
+                                    <li>
+                                        <h3>4. Préparation</h3>
+                                        <p>Nous procédons à la préparation de votre commande.</p>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-xm-12 col-sm-5 col-md-6 col-lg-2">
+                                <div id="livraison">
+                                    <li>
+                                        <h3>5. Livraison</h3>
+                                        <p>Les box repas sont emballées et nous partons les livrer chez vous.<br><br><strong><u>Livraisons effectuées le samedi et le dimanche.</u><br>Codes postaux desservis : voir section FAQ.</strong></p>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-xm-0 col-sm-0 col-md-0 col-lg-1">
+                            </div>
+                        </section>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+            </section>
+            
+        
+            
+            <div id="navlisterecettes" class="container-fluid">
+                <div class="hr-sect">Notre liste de recettes</div>
+            </div>
+            <section id="listerecettes">
+                <div class="container-fluid">
+                    <p><i><small>Cliquez sur les sous-titres ci-dessous pour faire défiler ↓</small></i></p>
+                    <a href="#plat1" class="boutonlisterecettes" data-toggle="collapse">
+                        <h3>Kaeng phed kai</h3>
+                    </a>
+                    <div id="plat1" class="collapse">
+                            <p >Le poulet au curry rouge, également connu sous le nom de "Kaeng phed kai", est une spécialité thaïlandaise très populaire et facile à cuisiner.<br>C’est le plat parfait pour les amateurs de curry.<br>Kaeng signifie curry, Phed signifie épicé et Kai signifie poulet.</p>
+                            <img src="images/poulet%20au%20curry%20rouge1.jpg">
+                            <br>
+                        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODY1NTUxODg4MTMzNDIy?igshid=se3vmnak7fqc&story_media_id=2442827137319642315_44235816051" class="listerecettesinsta" target="_blank"><i>Pour voir les photos de nos clients, <br><u>→ cliquez ici. ←</u></i></a>
+                            <br>
+                    </div>
+                    <a href="#plat2" class="boutonlisterecettes" data-toggle="collapse">
+                        <h3>Pad krapao kai</h3>
+                    </a>
+                    <div id="plat2" class="collapse">
+                        <p>Le poulet au basilic thaïlandais ou "pad krapao kai" en thaï, fait partie des nourritures thaïlandaises de rue les plus populaires (street food) et les plus aimées de tous les temps.</p>
+                        <img src="images/Le%20poulet%20au%20basilic%20tha%C3%AFlandais.jpg">
+                    </div>
+                    <a href="#plat3" class="boutonlisterecettes" data-toggle="collapse">
+                        <h3>Pad Thaï</h3>
+                    </a>
+                    <div id="plat3" class="collapse">
+                        <p>Ce plat est un incontournable de la nourriture de rue thaïlandaise.<br>Il est sans nul doute le plat le plus connu de Thaïlande, on peut le retrouver un peu partout et essentiellement dans les petites échoppes de marchands ambulants qui jonchent les rues du pays.</p>
+                        <img src="images/Pad%20Tha%C3%AF.jpg">
+                    </div>
+                    <a href="#plat4" class="boutonlisterecettes" data-toggle="collapse">
+                        <h3>Laap kai</h3>
+                    </a>
+                    <div id="plat4" class="collapse">
+                        <p>Le laap kai était à la base un plat que l'on faisait pour célébrer un évènement comme un mariage ou une naissance par exemple.<br>Plusieurs versions de ce plat existent mais il est généralement servi avec des légumes frais.<br>La traduction littérale du nom est "salade de viande aux herbes".</p>
+                        <img src="images/laap%20kai.jpg">
+                    </div>
+                </div>
+            </section>
+        
+            
+        
+            <div class="container-fluid">
+                <div id="navtarifs" class="hr-sect">Nos formules</div>
+            </div>
+            <section id="tarifs"> 
+                <div class="container-fluid">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td><strong>Nbr de personnes</strong></td>
+                                <td><strong>Nbr de recettes</strong></td>
+                                <td><strong>Prix</strong></td>
+                            </tr> 
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>24 euros</td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>1</td>
+                                <td>44 euros</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <p><i><small>Une nouvelle recette vous sera proposée toutes les 2 semaines (délais susceptibles de changer).</small></i></p>
+                </div>
+            </section>
+        
+        
+        
+            <div class="container-fluid">
+                <div id="navcommander" class="hr-sect">Commander</div>
+            </div>
+            <section id="commander">
+                <div class="container-fluid">
+                    <p>Pour passer commande, veuillez compléter le formulaire en cliquant sur le bouton ci-dessous.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeo3dqhKBtOYSv76UKruo_KyryDb9LDYdXPW3ghI_uLDYcw2w/viewform?usp=pp_url" class="buttoncommander" target="_blank">Cliquez ici</a>
+                </div>
+            </section>
+        
+            
+        
+            <div id="navfaq" class="container-fluid">
+                <div class="hr-sect">F.A.Q.</div>
+            </div>
+            <section id="faq">
+                <div class="container-fluid">
+                    <p><i><small>Cliquez sur les sous-titres ci-dessous pour faire défiler ↓</small></i></p>
+                    <a href="#question1" class="boutonfaq" data-toggle="collapse">
+                        <h3>Quels sont les codes postaux repris pour la livraison ?</h3>
+                    </a>
+                    <div id="question1" class="collapse">
+                        <p>Samedi : 5000(Namur), 5300 (Andenne), 4500 (Huy), 4540 (Amay), 4218 (Couthuin), 4520 (Wanze).<br>Dimanche : Liège Centre.</p>
+                    </div>
+                    <a href="#question2" class="boutonfaq" data-toggle="collapse">
+                        <h3>Que faire si mon code postal n'est pas dans la liste ?</h3>
+                    </a>
+                    <div id="question2" class="collapse">
+                        <p>Dans ce cas là, vous pouvez toujours nous contacter afin de trouver un possible arrangement.</p>
+                    </div>
+                    <a href="#question3" class="boutonfaq" data-toggle="collapse">
+                        <h3>Comment puis-je payer ?</h3>
+                    </a>
+                    <div id="question3" class="collapse">
+                        <p>Par virement bancaire. Une fois la commande passée, vous recevrez (dans la soirée) un mail de confirmation ainsi que les informations pour régler votre commande.<br>Nous vous demanderons ensuite de nous transmettre une preuve de votre paiement afin de pouvoir définitivement confirmer votre commande.</p>
+                    </div>
+                    <a href="#question4" class="boutonfaq" data-toggle="collapse">
+                        <h3>D’où viennent nos produits ?</h3>
+                    </a>
+                    <div id="question4" class="collapse">
+                        <p>La plupart des produits que nous vous proposons proviennent d’un magasin thaï situé dans la région de Liège. Nos viandes, nos volailles, nos poissons, nos fruits de mer et nos crustacés sont achetés frais et nous sont fournis par une boucherie de la région de Liège également.</p>
+                    </div>
+                    <a href="#question5" class="boutonfaq" data-toggle="collapse">
+                        <h3>Est-ce que la recette de la 1ère semaine sera toujours disponible plusieurs mois plus tard ?</h3>
+                    </a>
+                    <div id="question5" class="collapse">
+                        <p>Oui, elle restera disponible. Lorsqu'une recette est ajoutée à notre site, elle y reste.</p>
+                    </div>
+                    <a href="#question6" class="boutonfaq" data-toggle="collapse">
+                        <h3>J'ai un problème avec le formulaire de commande, que faire ?</h3>
+                    </a>
+                    <div id="question6" class="collapse">
+                        <p>Si avez envoyé deux fois le formulaire, entré une mauvaise donnée ou autre chose, vous pouvez alors nous contacter en remplissant le formulaire de contact.</p>
+                    </div>
+                </div>
+            </section>
+        
+        
+        
+            <div class="container-fluid">
+                <div id="navcontact" class="hr-sect">Nous contacter</div>
+            </div>
+            <section id="contact">
+                <div class="container-fluid">
+                    <p>Si vous souhaitez nous contacter pour nous poser une question ou nous aider à nous améliorer, vous pouvez le faire en cliquant sur le bouton ci-dessous.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkfhXs-sXZyELOTJBCE4TSRWvjZm_ft9duOjsNgjerQoZPBg/viewform?usp=sf_link" class="buttoncontact" target="_blank">Cliquez ici</a>
+                </div>
+                <br>
+                <br>
+            </section>
+
+        
+            
+            <!--<div class="container-fluid">
+                <div id="navequipe" class="hr-sect">L'équipe</div>
+            </div>
+            <section id="equipe">
+                <div class="container-fluid">
+                    <ul>
+                        <section class="row">
+                            <div class="col-xm-12 col-sm-4">
+                                <div id="membres">
+                                    <li>
+                                        <h3>Ben Antharin</h3>
+                                        <p>Créateur du concept " Siam box ".<br>Travaille depuis longtemps dans la restauration et a depuis toujours une passion pour la cuisine asiatique.</p>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-xm-12 col-sm-4">
+                                <div id="membres">
+                                    <li>
+                                        <h3>TJ Hannart</h3>
+                                        <p>Créateur du site internet et gérant administratif.</p>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-xm-12 col-sm-4">
+                                <div id="membres">
+                                    <li>
+                                        <h3>Alexis Sacré</h3>
+                                        <p>Responsable logistique.</p>
+                                    </li>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+            </section>-->
+    </main>
+    
+    <footer>
+    </footer>
+
+</body>
+    
+</html>

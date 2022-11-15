@@ -1,0 +1,350 @@
+/*--------------------------------------------------------------
+# GENERAL
+--------------------------------------------------------------*/
+p{
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: "M PLUS Rounded 1c";
+    text-align: center;
+}
+
+h3{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 19px;
+    font-family: 'Fredericka the Great';
+    text-align: center;
+}
+
+.hr-sect {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+	margin: auto;    
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: 'Fredericka the Great';
+    padding: 20px;
+    padding-top: 70px;
+}
+
+@media screen and (min-width: 601px){
+    .hr-sect::before, .hr-sect::after {
+        content: "";
+        flex-grow: 1;
+        background: rgba(0, 0, 0, 0.35);
+        height: 1px;
+        font-size: 0px;
+        line-height: 0px;
+        margin: 0px 16px;
+    }
+}
+
+
+
+
+/*--------------------------------------------------------------
+# NAVBAR
+--------------------------------------------------------------*/
+#navbar-toggle-cbox {
+    display:none;  
+}
+
+#navbar-toggle-cbox:checked ~ .collapse {
+    display: block;
+}
+
+header{
+    font-family: "M PLUS Rounded 1c";
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# HEADER
+--------------------------------------------------------------*/
+#intro {
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 601px){
+    #intro {
+        background-image: url(images/champriz.jpeg);
+    }
+}
+
+@media screen and (max-width: 601px){
+    #intro {
+        background-image: url(images/champriz%20qualite%20diminuee.jpg);
+    }
+}
+
+#intro h1{
+    font-family: 'Fredericka the Great';
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    height: auto;
+    width: auto;
+    border: 5px solid white;
+    position: center bottom;
+    padding: 2%;
+    border-radius: 5px; /*pr modifier coins du cadre*/
+    margin: auto;
+}
+
+#intro .intro-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# PRESENTATION
+--------------------------------------------------------------*/
+#presentation p{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#presentation span{
+    text-transform: uppercase;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# ETAPES
+--------------------------------------------------------------*/
+#etapes{ /*les 3 trucs c pr centrer https://www.youtube.com/watch?v=mVYgtzDLZfY*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#etapes ul{
+    margin: 20px 0;
+}
+
+#etapes ul li{
+    width: auto;
+    padding-top: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    /*float: center;*/
+    list-style-type: none;
+    
+}
+
+#choixduplat{
+    background: url('images/recette1f.png') no-repeat top center;
+    padding-bottom: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#commande{
+    background: url('images/commande1f.png') no-repeat top center;
+    padding-bottom: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#paiement{
+    background: url('images/paiement1fc.png') no-repeat top center;
+    padding-bottom: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#preparation{
+    background: url('images/preparation1.png') no-repeat top center;
+    padding-bottom: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#livraison{
+    background: url('images/livraison1f.png') no-repeat top center;
+    padding-bottom: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# LISTERECETTES
+--------------------------------------------------------------*/
+.boutonlisterecettes{
+    text-decoration: none;
+    color: #000000;
+}
+
+.boutonlisterecettes:hover, .boutonlisterecettes:focus, .boutonlisterecettes:active{
+    color: #000000;
+}
+
+#listerecettes img{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+}
+
+.listerecettesinsta{
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: "M PLUS Rounded 1c";
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+
+}
+.listerecettesinsta:hover, .listerecettesinsta:focus, .listerecettesinsta:active{
+    color: #000000;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# TARIFS
+--------------------------------------------------------------*/
+.table{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# COMMANDER
+--------------------------------------------------------------*/
+.buttoncommander
+{
+	display: block;
+	width:150px;
+	height:50px;
+	background: #b3cbce;
+	color:#FFFFFF;
+	font-size: 20px;
+	margin: 0 auto;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 3px;
+    font-family: 'M PLUS Rounded 1c';
+}
+.buttoncommander:hover
+{
+	background: #C0C0C0;
+    color:#FFFFFF;
+}
+
+
+
+/*--------------------------------------------------------------
+# FAQ
+--------------------------------------------------------------*/
+.boutonfaq{
+    text-decoration: none;
+    color: #000000;
+}
+
+.boutonfaq:hover, .boutonfaq:focus, .boutonfaq:active{
+    color: #000000;
+}
+
+
+
+/*--------------------------------------------------------------
+# CONTACT
+--------------------------------------------------------------*/
+.buttoncontact{
+	display: block;
+	width:150px;
+	height:50px;
+	background: #b3cbce;
+	color:#FFFFFF;
+	font-size: 20px;
+	margin: 0 auto;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 3px;
+    font-family: 'M PLUS Rounded 1c';
+}
+.buttoncontact:hover{
+	background: #C0C0C0;
+    color:#FFFFFF;
+}
+
+
+
+/*--------------------------------------------------------------
+# EQUIPE
+--------------------------------------------------------------*/
+#equipe{ /*les 3 trucs c pr centrer https://www.youtube.com/watch?v=mVYgtzDLZfY*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#equipe ul{
+    margin: -10px 0;
+}
+
+#equipe ul li{
+    width: 180px;
+    padding-top: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+    /*float: center;*/
+    list-style-type: none;
+}
+
+#membres{
+    padding-bottom: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
